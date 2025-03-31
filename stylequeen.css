@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh ;
+    
+    
+}
+.header{
+    background-image: url(images/img14.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+    width: auto;
+    height: 300px;
+}
+h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:60px;
+    text-align: center;
+    background-color: rgb(3, 72, 93);
+}
+.container{
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    background-image: linear-gradient(rgba(24, 120, 185, 0.696),rgba(6, 49, 114, 0.833));
+ 
+  }
+  .container p{
+      margin-bottom: 15px;
+      margin-right: 10px;
+  }
+  .poze
+{
+    width:450px;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0,0,0,.4);
+    border-radius:8px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.poze:before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+    z-index:2;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.poze img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+    transform:scale(1),rotate(0deg);
+    transition: all .5s linear;
+}
+.poze:hover img{
+    transform: scale(1.1) rotate(-5deg);
+}
+.poze.right{
+    float:right;
+}
+.poze.left{
+    float:left;
+}
