@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Explore</title>
+        <link rel="stylesheet" href="style_explore.css">
+        <link rel="stylesheet" href="jquery.flipster.min.css">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+<body>
+    <div class="explorer">
+        <nav>
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="harta.html">Harta</a></li>
+                <li><a href="fauna.html">Fauna și flora</a></li>
+                <li><a href="discover.html">Obiective turistice</a></li>
+            </ul>
+         </nav>
+       <div class="carousel">
+          <ul>
+              <li><img src="images/img4.jpg"></li>
+              <li><img src="images/img2.jpg"></li>
+              <li><img src="images/img3.jpg"></li>
+              <li><img src="images/img1.jpg"></li>
+              <li><img src="images/img5.jpg"></li>
+              <li><img src="images/img6.jpg"></li>
+              <li><img src="images/img7.jpg"></li>
+          </ul>
+       </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="jquery.flipster.min.js"> </script>
+  <script>
+    $('.carousel').flipster({
+        style: 'carousel',
+        spacing: -0.2,
+    });
+</script>
+</body>
+</html>
